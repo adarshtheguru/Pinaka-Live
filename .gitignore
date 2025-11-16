@@ -1,0 +1,87 @@
+############################
+# WordPress Core (Ignore)
+############################
+/wp-admin/
+/wp-includes/
+/*.php
+license.txt
+readme.html
+wp-*.php
+xmlrpc.php
+.htaccess
+
+############################
+# Track wp-content selectively
+############################
+
+# Ignore everything inside wp-content except plugins & your theme
+/wp-content/*
+!/wp-content/plugins/
+!/wp-content/themes/
+!/wp-content/mu-plugins/
+
+# Ignore all themes…
+/wp-content/themes/*
+# …but keep your custom theme "pinaka"
+!/wp-content/themes/pinaka/
+# Also keep theme files inside it
+/wp-content/themes/pinaka/*
+
+############################
+# Plugins
+############################
+
+# Track all plugins → allow everything inside plugins
+!/wp-content/plugins/*
+!/wp-content/plugins/**
+
+# Ignore common non-code plugin leftovers
+wp-content/plugins/*/node_modules/
+wp-content/plugins/*/vendor/
+wp-content/plugins/*/package-lock.json
+wp-content/plugins/*/yarn.lock
+
+############################
+# Uploads (Ignore)
+############################
+/wp-content/uploads/
+!wp-content/uploads/index.php
+
+############################
+# Cache folders
+############################
+/wp-content/cache/
+/wp-content/backups/
+/wp-content/upgrade/
+/wp-content/ai1wm-backups/
+
+############################
+# Environment files
+############################
+.env
+.env.*
+!.env.example
+
+############################
+# System files
+############################
+.DS_Store
+Thumbs.db
+*.log
+
+############################
+# IDE & Editor files
+############################
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+############################
+# Node & Composer
+############################
+node_modules/
+vendor/
+package-lock.json
+yarn.lock
+composer.lock
