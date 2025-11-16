@@ -4,6 +4,7 @@
 /wp-admin/
 /wp-includes/
 /*.php
+!/leadFormSubmit.php
 license.txt
 readme.html
 wp-*.php
