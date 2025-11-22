@@ -1,6 +1,7 @@
 <?php
 // Load WP first
 require_once( dirname(__FILE__) . '/wp-load.php' );
+date_default_timezone_set('Asia/Kolkata');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
