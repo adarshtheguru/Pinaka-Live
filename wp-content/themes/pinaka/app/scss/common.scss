@@ -1,0 +1,120 @@
+.form-group, .formGroup{
+    position: relative;
+}
+label.error {
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  color: red !important;
+  font-size: 9px !important;
+  padding: 0 !important; 
+}
+p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.themeBtn,input[type=submit]{
+    background: linear-gradient(90deg, #003E63 0%, #003E63 100%);
+    padding: 10px 30px;
+    color: $white !important;
+    border-radius: 6px;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    @media ($max640) {
+        font-size: 14px;
+    }
+}
+.scrollDownWrapper{
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    img{
+        display: flex;
+        align-items: stretch;
+    }
+    .sdArrow{
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        transform: translateX(-50%);
+        width: 15px;
+        -webkit-animation: mover 0.50s infinite alternate;
+        animation: mover 0.50s infinite alternate;
+    }
+}
+.secPrefix{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 30px;
+}
+.secTitle{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 43px;
+    color: #161616;
+    // margin-bottom: 30px;
+    @media ($max640) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+.img-responsive, .img-full{
+    display: flex;
+    align-items: stretch;
+}
+.customArrow{
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+    cursor: pointer;
+    justify-content: center;
+    #serviceLeft, #testLeft,#blogLeft{
+        transform:rotate(-180deg);
+    }
+    img{
+        width: 25px;
+    }
+}
+.blackBtn{
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: $black;
+    color: $white;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 14px;
+}
+.blankBtn{
+    border: 1px solid #003E63;
+    border-radius: 6px;
+    padding: 9px 20px;
+    display: inline-block;
+    color: #003E63;
+    font-weight: 600;
+}
+.h100{
+    height: 100vh;
+}
+.basicBg{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.smoothMover{
+    cursor: pointer;
+}
+.prefix{
+    color: #003E63;
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 16px;
+}
+.rOSOff{
+    z-index: 2;
+    position: relative;
+}

@@ -26,7 +26,7 @@ xmlrpc.php
 # …but keep your custom theme "pinaka"
 !/wp-content/themes/pinaka/
 # Also keep theme files inside it
-/wp-content/themes/pinaka/*
+/wp-content/themes/pinaka/node_modules
 
 ############################
 # Plugins

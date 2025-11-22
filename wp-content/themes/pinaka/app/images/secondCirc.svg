@@ -1,0 +1,20 @@
+<svg width="283" height="285" viewBox="0 0 283 285" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="141.5" cy="128" rx="128" ry="128.5" transform="rotate(90 141.5 128)" fill="url(#paint0_linear_1342_1026)"/>
+<path d="M4.74979 128.684C4.74978 204.561 65.9775 266.073 141.506 266.073C217.034 266.073 278.262 204.561 278.262 128.684" stroke="#B4E2EB" stroke-width="8"/>
+<path d="M141.506 266.072L141.506 284.75" stroke="#B4E2EB" stroke-width="8"/>
+<circle cx="141.728" cy="129.251" r="10.4328" transform="rotate(-90 141.728 129.251)" fill="black"/>
+<circle cx="141.728" cy="129.249" r="21.2567" transform="rotate(-90 141.728 129.249)" stroke="black" stroke-width="2"/>
+<circle cx="141.728" cy="129.25" r="30.2985" transform="rotate(-90 141.728 129.25)" stroke="black" stroke-width="2"/>
+<circle cx="141.728" cy="129.25" r="38.6448" transform="rotate(-90 141.728 129.25)" stroke="black" stroke-width="2"/>
+<circle cx="141.729" cy="129.251" r="47.6866" transform="rotate(-90 141.729 129.251)" stroke="black" stroke-width="2"/>
+<path d="M200.5 129.25L156.682 129.25" stroke="black" stroke-width="2"/>
+<path d="M127.818 129.25L84 129.25" stroke="black" stroke-width="2"/>
+<path d="M141.729 187.5V143.682" stroke="black" stroke-width="2"/>
+<path d="M141.729 114.818V71" stroke="black" stroke-width="2"/>
+<defs>
+<linearGradient id="paint0_linear_1342_1026" x1="31.4419" y1="-0.500014" x2="252.545" y2="255.648" gradientUnits="userSpaceOnUse">
+<stop stop-color="#ADE1FF"/>
+<stop offset="1" stop-color="#D6F0FF"/>
+</linearGradient>
+</defs>
+</svg>

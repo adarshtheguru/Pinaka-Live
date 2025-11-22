@@ -1,0 +1,210 @@
+.single {
+  .hero{
+        height: 60vh;
+    }
+  color: #161616;
+  .singleOverview {
+    background-color: #eaf7ff;
+    padding-top: 120px;
+    .secPrefix {
+      a {
+        color: #161616;
+      }
+    }
+    .blog-title{
+      .line{
+        border-bottom: 3px solid #003E6366;
+        padding-top: 100px;
+      }
+      .secTitle {
+        font-size: 36px;
+        line-height: 46px;
+        width: 80%;
+        color: #003E63;
+      }
+      .topInfo {
+        width: 80%;
+      margin: 20px 0 30px;
+      padding: 0px 0;
+      border-bottom: 1px solid #535353;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      justify-content: space-between;
+    }
+    }
+    
+    .blog-content{
+      width: 70%;
+      margin: auto;
+    }
+    .contentPanel {
+      margin-top: 30px;
+      p {
+        color: #161616;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .publishImg {
+        margin: 48px 0;
+        border-radius: 12px;
+      }
+      h2 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 56px;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 38px;
+      }
+      ul{
+        padding-left: 20px;
+        margin: 10px;
+      }
+      p{
+        margin: 10px 0;
+      }
+      .recentPost {
+        margin-top: 80px;
+        .recentGridBox {
+          margin: 10px 0 50px;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          .box{
+            .blog-info{
+                background-color: #003E63;
+                padding: 25px;
+            }
+            .dates{
+                font-weight: 600;
+                font-size: 12px;
+                text-transform: capitalize;
+                color: #EAF7FF;
+                padding-bottom: 10px;
+            }
+            .abstract{
+                color: #EAF7FF;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 26px;
+                padding-bottom: 10px;
+                height: 65px;
+                overflow: hidden;
+            }
+            .small-desc{
+                color: #EAF7FF;
+                height: 80px;
+                font-size: 14px;
+            }
+            .read-more{
+                color: rgba(234,247,255,0.5);
+                font-weight: 700;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .wantResult{
+    background: radial-gradient(116.19% 210.15% at 36.27% 57.58%, #89E8CD 0%, #87E4CB 14%, #83D8C6 28%, #7BC4BE 42%, #71A8B3 56%, #6384A5 70%, #535893 84%, #40257F 98%, #3D1D7C 100%);
+  }
+}
+/********************* Service Media stategy Page*************/
+.media-stats{
+  display: flex;
+  text-align: center;
+  @media ($max992) {
+    flex-direction: column;
+    gap:30px;
+  }
+  .numbers{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     @media ($max640){
+     gap:0px;
+     }
+    h3{
+      font-weight: 700;
+      font-size: 52px;
+      line-height: 56px;
+      /*color: #003E63;*/
+      background: linear-gradient(318.01deg, #ffdc61 3.07%, #ffdc61 30.32%, #ff6ef1 100.93%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+     @media ($max640){
+     font-size:30px;
+     }
+    }
+    p{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      align-items: center;
+      text-align: center;
+      color: #161616;
+    }
+  }
+}
+.funnel{
+  .secPrefix{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 36px;
+    color: #FFFFFF;
+    small{
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  .contBox{
+      gap: 20px!important;
+    .box{
+      padding: 18px!important;
+      .title{
+        font-size: 32px!important;
+      }
+      .listingGroup{
+        padding-top: 0px!important;
+        ul{
+          padding-top: 0!important;
+          padding-left: 20px!important;
+        }
+      }
+    }
+  }
+}
+.mid-funnel{
+  .blueCards{
+    background-color: #eaf7ff!important;
+  }
+  .partA, .partB{
+    h4, p{
+      color: #161616!important;
+    }
+  }
+  .box{
+    border: 1px solid rgba(0, 62, 99, 0.3)!important;
+    .title{
+    color: #003e63 !important;
+    background: none !important;
+    -webkit-text-fill-color: #003e63 !important;
+    text-fill-color: #003e63!important;
+    }
+    ul{
+      li{
+        color: #161616!important;
+      }
+    }
+  }
+}

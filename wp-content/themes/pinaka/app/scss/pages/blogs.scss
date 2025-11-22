@@ -1,0 +1,110 @@
+.blogs{
+    .hero{
+        height: 80vh;
+    }
+    .caseOverview{
+        position: relative; 
+        background-color: #EAF7FF;
+        .container{
+            position: relative;
+            z-index: 2;
+        }
+        .watermark{
+            position: absolute;
+            top: 150px;
+            left: 48%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        &.padding{
+            padding-top: 50px;
+            // padding-bottom: 150px;
+            @media ($max992) {
+                padding-top: 70px;
+            }
+        }
+        .caseBox{
+            .blogGridBox{
+                margin: 10px 0 50px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+                @media ($max640) {
+                   grid-template-columns: 1fr;
+                }
+                .box{
+                    img{
+                        /*aspect-ratio: 4/2;*/
+                    }
+                    .blog-info{
+                        background-color: #003E63;
+                        padding: 25px;
+                    }
+                    .dates{
+                        font-weight: 600;
+                        font-size: 12px;
+                        text-transform: capitalize;
+                        color: #EAF7FF;
+                        padding-bottom: 10px;
+                    }
+                    .abstract{
+                        color: #EAF7FF;
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 26px;
+                        padding-bottom: 10px;
+                        height: 65px;
+                        overflow: hidden;
+                        @media ($max640){
+                        font-size: 18px;
+                        height: auto;
+                      }
+                    }
+                    .small-desc{
+                        color: #EAF7FF;
+                        height: 80px;
+                        @media ($max640){
+                           height: auto;
+                          }
+                    }
+                    .read-more{
+                        color: rgba(234,247,255,0.5);
+                        font-weight: 700;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+        }
+    }
+    .pagination {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+
+  .page-numbers {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 8px 14px;
+    border: 1px solid #ddd;
+    color: #003e63;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      background: #003e63;
+      color: #fff;
+      border-color: #003e63;
+    }
+
+    &.current {
+      background: #003e63;
+      color: #fff;
+      border-color: #003e63;
+    }
+  }
+}
+}

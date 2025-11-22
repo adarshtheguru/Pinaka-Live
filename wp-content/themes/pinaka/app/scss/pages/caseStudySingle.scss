@@ -1,0 +1,343 @@
+.caseStudySingle {
+  .secTitle {
+    font-weight: 600;
+    font-size: 42px;
+    padding-bottom: 25px;
+    @media ($max640){
+      padding-bottom: 0;
+    }
+  }
+  .topInfo {
+    background-color: #eaf7ff;
+    &.padding {
+      padding-top: 200px;
+    }
+    .prefix {
+      position: relative;
+      &:before {
+        position: absolute;
+        content: "";
+        top: 50%;
+        height: 3px;
+        width: 100%;
+        left: -101%;
+        background: #003e6366;
+      }
+    }
+    .container {
+      padding-left: 150px;
+    }
+    .headTitle {
+      font-family: $inter;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 52px;
+      color: #161616;
+      padding-top: 12px;
+    }
+  }
+  .aboutClient {
+    background-color: #eaf7ff;
+    &.padding {
+      padding: 100px 0;
+    }
+    .contBox {
+      display: grid;
+      grid-template-columns: 30% auto;
+      gap: 75px;
+      align-items: center;
+      @media ($max992) {
+        grid-template-columns:  auto;
+      }
+    }
+  }
+  .blueBox {
+    background-color: #003e63;
+    &.padding {
+      padding: 90px 0;
+    }
+    .contBox {
+      display: flex;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 58px;
+      @media ($max992) {
+        flex-direction: column;
+      }
+      .box {
+        flex: 1;
+        padding: 32px;
+        border: 1px solid #eaf7ff4d;
+        border-radius: 18px;
+        color: #fff;
+        font-size: 18px;
+        .title {
+          background: linear-gradient(
+            318.01deg,
+            #ffdc61 3.07%,
+            #ffdc61 46.32%,
+            #ff6ef1 96.93%
+          );
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          text-fill-color: transparent;
+          font-size: 42px;
+          font-weight: 600;
+          padding-bottom: 25px;
+          @media ($max640){
+            font-size: 24px;
+            padding-bottom: 10px;
+          }
+        }
+        .listingGroup {
+          padding-top: 25px;
+          @media ($max640){
+            padding-top: 10px; 
+            }
+          ul {
+            padding-top: 32px;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+            padding-left: 38px;
+            @media ($max640){
+              padding-top: 0px; 
+              padding-left: 20px;
+            }
+            li {
+              position: relative;
+              z-index: 1;
+              font-size: 16px;
+              &::before {
+                position: absolute;
+                content: url(../../app/images/neondot.png);
+                left: -20px;
+                top: 0;
+                z-index: 2;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .strategy {
+    background-color: #eaf7ff;
+    &.padding {
+      padding: 100px 0 165px;
+      @media ($max640){
+        padding: 50px 0 165px;
+      }
+    }
+    .contBox {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 65px;
+      @media ($max992) {
+        grid-template-columns:  auto;
+        gap: 30px;
+      }
+      .left {
+        .secTitle {
+          padding: 23px 0;
+        }
+        > p {
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 30px;
+          color: #161616;
+          @media ($max640){
+            font-size: 14px;
+            line-height: 24px;
+          }
+        }
+        .animatedThread {
+          padding-top: 30px;
+          padding-left: 100px;
+          width: 100%; /* scales to parent */
+          height: auto; /* preserves aspect ratio */
+          display: block; /* prevents inline spacing issues */
+          margin: 0 auto; /* optional: centers it */
+        }
+      }
+      .right {
+        ul {
+          list-style-type: none;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          li {
+            position: relative;
+            z-index: 1;
+            font-size: 16px;
+            border: 1px solid #003e631a;
+            border-radius: 8px;
+            padding: 16px 38px;
+            &::before {
+              position: absolute;
+              content: url(../../app/images/neondot.png);
+              left: 16px;
+              top: 20px;
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+  }
+  .campaigns {
+    background-color: #003e63;
+    &.padding {
+      padding-top: 0;
+      padding-bottom: 80px;
+      @media ($max640) {
+        padding-bottom: 40px;
+      }
+    }
+    .contBox {
+      margin-top: -150px;
+      display: block;
+      gap: 60px;
+      .campaignWrapper {
+        .customArrow{
+          margin: 30px 0 20px;
+        }
+        .imgCont {
+          padding-top: 34px;
+          display: block;
+          gap: 23px;
+          justify-content: center;
+          .imgBox{
+            padding: 0 12px 0;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .execution{
+    background-color: #EAF7FF;
+    &.padding{
+        padding: 100px 0;
+        @media ($max640){
+          padding: 50px 0;
+        }
+    }
+    .exBoxes{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 27px;
+        padding: 32px 0 70px;
+        @media ($max992) {
+        grid-template-columns:  auto;
+        padding: 32px 0 30px;
+      }
+        .box{
+            border: 1px solid #003E631A;
+            padding: 32px 16px;
+            min-height: 200px;
+             @media ($max992) {
+              min-height: auto;
+              padding: 15px 16px;
+             }
+            >img{
+                padding-bottom: 24px;
+                @media ($max992) {
+                  padding-bottom: 10px;
+                }
+            }
+        }
+    }
+  }
+  .results{
+    background-color: #003E63;
+    .topLayer{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 200px;
+        padding-bottom: 50px;
+        align-items: center;
+        color: #fff;
+        @media ($max992) {
+          flex-direction: column;
+          padding-right: 20px;
+          align-items: flex-start;
+          padding-bottom: 20px;
+        }
+        .secTitle{
+            padding-bottom: 0;
+        }
+        p{
+            font-size: 20px;
+            @media ($max640){
+              font-size: 16px;
+              line-height: 26px;
+            }
+        }
+    }
+    .dataBox{
+        display: flex;
+        /*grid-template-columns: repeat(5, 1fr);*/
+        @media ($max992) {
+          flex-direction: column;
+          gap: 20px;
+        }
+        .box{
+            border: 1px solid #EAF7FF4D;
+            padding: 12px 20px;
+            flex: 1;
+            &:first-of-type{
+                border-radius: 12px 0 0 12px;
+            }
+            &:last-of-type{
+                border-radius: 0 12px 12px 0;
+            }
+            @media ($max992) {
+              border-radius: 12px!important;
+            }
+            .data{
+                background: linear-gradient(
+                    318.01deg,
+                    #ffdc61 3.07%,
+                    #ffdc61 46.32%,
+                    #ff6ef1 96.93%
+                );
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                text-fill-color: transparent;
+                font-size: 52px;
+                line-height: 56px;
+                font-weight: 700;
+                padding-bottom: 5px;
+                @media ($max640){
+                  font-size: 28px;
+                  line-height: 38px;
+                }
+            }
+            p{
+                font-size: 14px;
+                color: #fff;
+                line-height: normal;
+            }
+        }
+    }
+  }
+  .takeaways{
+    background-color: #EAF7FF;
+    .contBox{
+        width: 80%;
+        margin: 0 auto;
+        @media ($max640){
+          width: 100%;
+        }
+        .secTitle{
+            padding-bottom: 32px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+  }
+}
