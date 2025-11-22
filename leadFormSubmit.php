@@ -13,7 +13,7 @@ require_once ABSPATH . WPINC . '/PHPMailer/Exception.php';
 /**
  * Send HTML email using a table template (Gmail friendly)
  */
-function send_smtp_mail($to, $subject, $data = []) {
+function send_smtp_mail($to, $subject, $data = [], $cc = [], $bcc = []) {
 
     $mail = new PHPMailer(true);
 
@@ -30,8 +30,42 @@ function send_smtp_mail($to, $subject, $data = []) {
         // From:
         $mail->setFrom(SMTP_FROM, SMTP_FROM_NAME);
 
-        // To:
-        $mail->addAddress($to);
+        /* -------------------------
+        Add TO (string or array)
+        -------------------------- */
+        if (is_array($to)) {
+            foreach ($to as $email) {
+                if (!empty($email)) $mail->addAddress($email);
+            }
+        } else {
+            $mail->addAddress($to);
+        }
+
+        /* -------------------------
+        Add CC (string or array)
+        -------------------------- */
+        if (!empty($cc)) {
+            if (is_array($cc)) {
+                foreach ($cc as $email) {
+                    if (!empty($email)) $mail->addCC($email);
+                }
+            } else {
+                $mail->addCC($cc);
+            }
+        }
+
+        /* -------------------------
+        Add BCC (string or array)
+        -------------------------- */
+        if (!empty($bcc)) {
+            if (is_array($bcc)) {
+                foreach ($bcc as $email) {
+                    if (!empty($email)) $mail->addBCC($email);
+                }
+            } else {
+                $mail->addBCC($bcc);
+            }
+        }
 
         // Subject
         $mail->Subject = $subject;
@@ -132,20 +166,13 @@ if ($_POST) {
                 "Submitted At"     => date("Y-m-d H:i:s")
             ];
 
-            // Send email
+            // Send email sales@pinaka.digital
             $emailSent = send_smtp_mail(
-                "adarshji1999@gmail.com",
+                "operations@pinaka.digital",
                 "New Form Submission From Contact Us",
-                [
-                    "Full Name"    => $name,
-                    "Email"        => $email,
-                    "Phone"        => $phone,
-                    "Company"      => $company,
-                    "Website"      => $website,
-                    "Service"      => $service,
-                    "Message"      => nl2br($message),
-                    "Submitted At" => date("Y-m-d H:i:s")
-                ]
+                $emailData,
+                ["sales@pinaka.digital", "pragneshlimbasiya@gmail.com"], //cc
+                ["adarshji1999@gmail.com"], //bcc
             );
 
             if ($emailSent) {
