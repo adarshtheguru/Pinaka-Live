@@ -60,6 +60,17 @@ get_header();
 		<div class="project-card-list justify-end col-12">
 			<div class="col-5 col-xs-12 col-md-12">
 				<div class="project-card-info">
+					<img src="<?php echo THEMEURL; ?>/app/images/mantra-home.png" class="rOSOff br-12 img-responsive" data-animation="fadeInUp" data-timeout="200">
+					<h3 class="rOSOff  scroll-animate fade-in">Mantra</h3>
+					<p class="rOSOff  scroll-animate fade-in">Campaigns, Digital Advertising, Social Advertising, SEO</p>
+					<a href="<?php echo site_url('/case-studies/social-media-management/mantra-properties/ '); ?>" class="blue-btn rOSOff" data-animation="fadeInUp" data-timeout="200">See the case study</a>
+				</div>
+			</div>
+		</div>
+		<div class="project-card-list col-12">
+			<div class="col-5 col-xs-12 col-md-12">
+				<div class="project-card-info">
+
 					<img class="rOSOff img-responsive br-12" data-animation="fadeInUp" data-timeout="200" src="<?php echo THEMEURL; ?>/app/images/shubh-vedha-home.png">
 					<h3 class="rOSOff scroll-animate fade-in">Shubh Vedha</h3>
 					<p class="rOSOff scroll-animate fade-in">Campaigns, Digital Advertising, Social Advertising</p>
@@ -67,23 +78,14 @@ get_header();
 				</div>
 			</div>
 		</div>
-		<div class="project-card-list col-12">
+		<div class="project-card-list scroll_card justify-end col-12">
 			<div class="col-5 col-xs-12 col-md-12">
 				<div class="project-card-info">
+					
 					<img class="rOSOff img-responsive br-12" data-animation="fadeInUp" data-timeout="200" src="<?php echo THEMEURL; ?>/app/images/pwc-home.png">
 					<h3 class="rOSOff scroll-animate fade-in">Pride World City</h3>
 					<p class="rOSOff scroll-animate fade-in">Campaigns, Digital Advertising, Social Advertising</p>
 					<a href="<?php echo site_url('/case-studies/performance-marketing/pride-world-city'); ?>" class="blue-btn rOSOff" data-animation="fadeInUp" data-timeout="200">See the case study</a>
-				</div>
-			</div>
-		</div>
-		<div class="project-card-list scroll_card justify-end col-12">
-			<div class="col-5 col-xs-12 col-md-12">
-				<div class="project-card-info">
-					<img src="<?php echo THEMEURL; ?>/app/images/goyal-properties-home.png" class="rOSOff br-12 img-responsive" data-animation="fadeInUp" data-timeout="200">
-					<h3 class="rOSOff  scroll-animate fade-in">Goyal Properties</h3>
-					<p class="rOSOff  scroll-animate fade-in">Campaigns, Website, SEO</p>
-					<a href="<?php echo site_url('/case-studies/seo/goyal-properties'); ?>" class="blue-btn rOSOff" data-animation="fadeInUp" data-timeout="200">See the case study</a>
 				</div>
 			</div>
 		</div>
@@ -478,7 +480,7 @@ get_header();
 		</div>
 	</div>
 </section>
-<section class="padding testimonials">
+<section class="padding testimonials ">
 		<div class="container">
 			<div class="col-12">
 				<div class="col-5  col-md-12">
@@ -489,19 +491,19 @@ get_header();
 					<div class="secTitle mg-bt-20  scroll-animate slide-in-up delay-4">How Pinaka Digital Technologies has helped brands thrive</div>
 				</div>
 			</div>
-			<div class="col-12 fade-in scroll-animate">
+			<div class="col-12 fade-in scroll-animate counterMain">
 				<div class="testimonial-grid">
 					
 					<div class="testi-card">
-						<iframe width="100%" height="260" src="https://www.youtube.com/embed/gqcSAxuPRvw" title="Client Testimonial - Pride World City" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe width="100%" height="260" src="https://www.youtube.com/embed/DOjklhk2Y0g" title="Client Testimonial - Pride World City" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						<h2 class="sec-title">Pride World City</h2>
 						<div class="card-intact">
 							<div class="inner">
-								<div class="number">5x</div>
+								<div class="number"><span class="count" data-count="5">0</span>x</div>
 								<div class="intact-title">Leads Growth</div>
 							</div>
 							<div class="inner">
-								<div class="number">20%</div>
+								<div class="number"><span class="count" data-count="20">0</span>%</div>
 								<div class="intact-title">Site Visit Growth</div>
 							</div>
 						</div>
@@ -512,16 +514,16 @@ get_header();
 						</div>
 					</div>
 					<div class="testi-card">
-						<iframe width="100%" height="260" src="https://www.youtube.com/embed/qaKBMPuHVug" title="Client Testimonial - Ceratec Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe width="100%" height="260" src="https://www.youtube.com/embed/H8zDlvWw-ZI" title="Client Testimonial - Ceratec Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						
 						<h2 class="sec-title">Ceratec Group</h2>
 						<div class="card-intact">
 							<div class="inner">
-								<div class="number">15x</div>
+								<div class="number"><span class="count" data-count="15">0</span>x</div>
 								<div class="intact-title">Leads Growth</div>
 							</div>
 							<div class="inner">
-								<div class="number">12%</div>
+								<div class="number"><span class="count" data-count="12">0</span>%</div>
 								<div class="intact-title">Site Visit Growth</div>
 							</div>
 						</div>
@@ -531,15 +533,15 @@ get_header();
 						</div>
 					</div>
 					<div class="testi-card">
-						<iframe width="100%" height="260" src="https://www.youtube.com/embed/bbOm_o7jS4k" title="Client Testimonial - KBD Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<iframe width="100%" height="260" src="https://www.youtube.com/embed/HuI3gtIBEY0" title="Client Testimonial - KBD Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 						<h2 class="sec-title">KBD Group</h2>
 						<div class="card-intact">
 							<div class="inner">
-								<div class="number">10x</div>
+								<div class="number"><span class="count" data-count="10">0</span>x</div>
 								<div class="intact-title">Leads Growth</div>
 							</div>
 							<div class="inner">
-								<div class="number">30%</div>
+								<div class="number"><span class="count" data-count="30">0</span>%</div>
 								<div class="intact-title">Site Visit Growth</div>
 							</div>
 						</div>
@@ -548,8 +550,27 @@ get_header();
 							<a href="<?php echo site_url('/our-works'); ?>" class="know-more rOSOff">Know More</a>
 						</div>
 					</div>
+					<div class="testi-card">
+						<iframe width="100%" height="260" src="https://www.youtube.com/embed/z45qNLMBSWg" title="Client Testimonial - Ceratec Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						
+						<h2 class="sec-title">Shubh Developers</h2>
+						<div class="card-intact">
+							<div class="inner">
+								<div class="number"><span class="count" data-count="10">0</span>x</div>
+								<div class="intact-title">Leads Growth</div>
+							</div>
+							<div class="inner">
+								<div class="number"><span class="count" data-count="20">0</span>%</div>
+								<div class="intact-title">Site Visit Growth</div>
+							</div>
+						</div>
+						<div class="testi-review">“Pinaka team is quite good”</div>
+						<div class="">
+							<a href="<?php echo site_url('/case-studies/performance-marketing/shubh-veda/'); ?>" class="know-more rOSOff">Know More</a>
+						</div>
+					</div>
 				</div>
-				<div class="customArrow visible-md mg-tp-30">
+				<div class="customArrow mg-tp-30">
 					<div id="testLeft">
 						<img src="<?php echo THEMEURL; ?>/app/images/next.svg" alt="" class="img-responsive">
 					</div>

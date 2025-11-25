@@ -63,7 +63,38 @@ $(document).ready(function () {
         }
     });
 
-
+    $('.testimonial-grid').slick({
+			slidesToShow: 3,      // 3 slides per row
+			slidesToScroll: 1,    // scroll 3 at a time
+			rows: 1,
+			arrows: true,
+			dots: false,
+			autoplay: false,
+			autoplaySpeed: 3000,
+			infinite: true,
+			prevArrow: '#testLeft',
+		nextArrow: '#testRight',
+		responsive: [
+			{
+				breakpoint: 1441,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 1025,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 993,
+				settings: {
+					slidesToShow: 1
+				}
+			},
+		]
+		});
 
 	if (winWD < 992) {
 		// $(".enq_click, .frmclose").click(function() {
@@ -86,18 +117,7 @@ $(document).ready(function () {
 			prevArrow: '#serviceLeft',
 		  nextArrow: '#serviceRight',
 		});
-		$('.testimonial-grid').slick({
-			slidesToShow: 1,      // 3 slides per row
-			slidesToScroll: 1,    // scroll 3 at a time
-			rows: 1,
-			arrows: true,
-			dots: false,
-			autoplay: false,
-			autoplaySpeed: 3000,
-			infinite: true,
-			prevArrow: '#testLeft',
-		nextArrow: '#testRight',
-		});
+		
 
 		$('.insights .partB').slick({
 			slidesToShow: 1,      // 3 slides per row
@@ -225,7 +245,8 @@ $(document).ready(function () {
 		dots: false,
 		autoplay: true,
 		fade: true,
-		cssEase: 'linear'
+		cssEase: 'linear',
+		speed:1000
 	});
 
 $('.clientSlider').slick({
@@ -1072,4 +1093,30 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById(target).classList.add('active');
     });
   });
+});
+
+var counted = 0;
+$(window).on('scroll', function () {
+   var oTop = $('.counterMain').offset().top - window.innerHeight;
+   if (counted === 0 && $(window).scrollTop() > oTop) {
+      $('.count').each(function () {
+         var $this = $(this);
+         var countTo = $this.attr('data-count');
+         $({
+            countNum: 0
+         }).animate({
+            countNum: countTo
+         }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function () {
+               $this.text(Math.floor(this.countNum));
+            },
+            complete: function () {
+               $this.text(this.countNum);
+            },
+         });
+      });
+      counted = 1;
+   }
 });

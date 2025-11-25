@@ -346,6 +346,10 @@
   &.text-white {
     color: #fff;
   }
+  @media ($max640) {
+    font-size: 26px;
+    line-height: 36px;
+  }
 }
 .staticInfo {
   background-color: #eaf7ff;
@@ -812,11 +816,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @media ($max992) {
+        flex-direction: column;
+        gap: 20px;
+      }
       .title {
         font-family: "Sora", sans-serif;
         font-weight: 500;
         font-size: 36px;
         color: #003e63;
+        @media ($max992) {
+          font-size: 22px;
+          line-height: 32px;
+        }
       }
     }
   }
@@ -1010,6 +1022,10 @@
       line-height: 32px;
       color: #003e63;
       margin-top: 20px;
+      @media ($max640) {
+        font-size: 22px;
+        line-height: 32px;
+      }
     }
 
     p {
@@ -1534,7 +1550,7 @@
   border: 1px solid #fff;
 }
 .testimonial-grid {
-  display: grid;
+  display: block;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   @media ($max992){

@@ -41,8 +41,8 @@ get_header(); ?>
                                         <!-- • <?php echo estimated_reading_time(get_the_content()); ?> -->
                                     </div>
                                     <p class="small-desc"><?php echo mb_strimwidth(get_the_excerpt(), 0, 100, '...'); ?></p>
-                                    <a href="<?php the_permalink(); ?>" class="read-more">
-                                        Read More <img src="<?php echo THEMEURL; ?>/app/images/blog-arrow.svg" alt="">
+                                    <a href="<?php the_permalink(); ?>" class="read-more white-btn">
+                                        Read More
                                     </a>
                                 </div>
                             </div>

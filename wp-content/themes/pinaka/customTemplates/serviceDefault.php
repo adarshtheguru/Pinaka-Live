@@ -228,7 +228,7 @@ if ($query->have_posts()) : ?>
         <div class="container">
             <div class="partA scroll-animate fade-in">
                 <div class="title">Relevant Case Studies</div>
-                <a href="<?php echo get_post_type_archive_link('our-works'); ?>" class="themeBtn">See All CASE STUDIES</a>
+                <a href="<?php echo get_post_type_archive_link('our-works'); ?>" class="themeBtn hidden-xs">See All CASE STUDIES</a>
             </div>
         </div>
 
@@ -249,6 +249,10 @@ if ($query->have_posts()) : ?>
                 <?php endwhile; ?>
             </div>
         </div>
+        <div class="container">
+        	<a href="<?php echo get_post_type_archive_link('our-works'); ?>" class="themeBtn visible-xs">See All CASE STUDIES</a>
+        </div>
+
     </section>
 <?php
 endif;

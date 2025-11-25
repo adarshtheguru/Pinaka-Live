@@ -206,7 +206,10 @@ if ($menu_items) {
 										<h3 class="title">PR Services</h3>
 										<ul>
 											<li>
-												<a href="<?php echo site_url('/services/public-relations-influencer'); ?>">Public Relations & Influencer</a>
+												<a href="<?php echo site_url('/services/public-relations-influencer'); ?>">Online PR</a>
+											</li>
+											<li>
+												<a href="<?php echo site_url('/services/public-relations-influencer'); ?>">Influencer</a>
 											</li>
 											
 										</ul>

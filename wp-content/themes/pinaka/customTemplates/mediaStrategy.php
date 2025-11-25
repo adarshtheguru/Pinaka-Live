@@ -17,17 +17,17 @@
 				<?php echo esc_html($intro_b); ?>
 			</div>
 		</div>
-		<div class="media-stats mg-tp-30">
+		<div class="media-stats mg-tp-30 counterMain">
 			<div class="numbers scroll-animate slide-in-up delay-1">
-				<h3>500+</h3>
+				<h3><span class="count" data-count="500">0</span>+</h3>
 				<p>Projects Successfully Launched</p>
 			</div>
 			<div class="numbers scroll-animate slide-in-up delay-2">
-				<h3>10,000+</h3>
+				<h3><span class="count" data-count="10000">0</span>+</h3>
 				<p>Successful Campaigns</p>
 			</div>
 			<div class="numbers scroll-animate slide-in-up delay-3">
-				<h3>₹100+ Cr</h3>
+				<h3>₹<span class="count" data-count="100">0</span>+ Cr</h3>
 				<p>Media Spends Managed</p>
 			</div>
 		</div>

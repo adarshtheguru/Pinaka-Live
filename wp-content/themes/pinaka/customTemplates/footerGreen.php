@@ -21,7 +21,7 @@ if ($instagram_feed_shortcode) {
         </div>
         <div class="content scroll-animate slide-in-right delay-5">
             <div class="secTitle">Let's Get Started <br> on Your Success Journey</div>
-            <p class="para">Reach Out for a Demo or Request a Tailored Quote</p>
+            <p class="para">Request a Tailored Quote</p>
             <div class="ctas">
                 <a href="javascript:;" class="themeBtn enq_click rOSOff">Get a Quote</a>
                 <a href="<?php echo site_url('/contact-us'); ?>" class="blankBtn rOSOff">Contact Us</a>
