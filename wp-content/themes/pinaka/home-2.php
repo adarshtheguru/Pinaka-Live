@@ -614,7 +614,7 @@ get_header();
 								<?php else : ?>
 									<img class="img-full scroll-animate clip-reveal br-12" src="<?php echo THEMEURL; ?>/app/images/rectPlace.png" alt="">
 								<?php endif; ?>
-							</a>
+							
 
 							<div class="info mg-tp-10">
 								<!-- <span class="text-white"><?php echo get_post_type_object(get_post_type())->labels->singular_name; ?> • </span> -->
@@ -623,6 +623,7 @@ get_header();
 							</div>
 
 							<p class="title text-white"> <?php echo mb_strimwidth( get_the_title(), 0, 60, '...' ); ?></p>
+							</a>
 						</div>
 					<?php
 					endwhile;
