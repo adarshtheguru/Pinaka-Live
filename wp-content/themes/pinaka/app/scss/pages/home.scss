@@ -858,6 +858,10 @@
         font-size: 24px;
         color: #003e63;
         padding-top: 10px;
+        @media ($max992) {
+          font-size: 20px;
+          line-height: 26px;
+        }
       }
       .slick-slide {
         padding: 0 15px; // creates gap

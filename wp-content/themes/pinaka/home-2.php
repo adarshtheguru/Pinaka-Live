@@ -61,7 +61,7 @@ get_header();
 			<div class="col-5 col-xs-12 col-md-12">
 				<div class="project-card-info">
 					<img src="<?php echo THEMEURL; ?>/app/images/mantra-home.png" class="rOSOff br-12 img-responsive" data-animation="fadeInUp" data-timeout="200">
-					<h3 class="rOSOff  scroll-animate fade-in">Mantra</h3>
+					<h3 class="rOSOff  scroll-animate fade-in">Mantra Properties</h3>
 					<p class="rOSOff  scroll-animate fade-in">Campaigns, Digital Advertising, Social Advertising, SEO</p>
 					<a href="<?php echo site_url('/case-studies/social-media-management/mantra-properties/ '); ?>" class="blue-btn rOSOff" data-animation="fadeInUp" data-timeout="200">See the case study</a>
 				</div>
@@ -493,6 +493,26 @@ get_header();
 			</div>
 			<div class="col-12 fade-in scroll-animate counterMain">
 				<div class="testimonial-grid">
+
+					<div class="testi-card">
+						<iframe width="100%" height="260" src="https://www.youtube.com/embed/z45qNLMBSWg" title="Client Testimonial - Ceratec Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						
+						<h2 class="sec-title">Shubh Developers</h2>
+						<div class="card-intact">
+							<div class="inner">
+								<div class="number"><span class="count" data-count="10">0</span>x</div>
+								<div class="intact-title">Leads Growth</div>
+							</div>
+							<div class="inner">
+								<div class="number"><span class="count" data-count="20">0</span>%</div>
+								<div class="intact-title">Site Visit Growth</div>
+							</div>
+						</div>
+						<div class="testi-review">“Pinaka team is quite good”</div>
+						<div class="">
+							<a href="<?php echo site_url('/case-studies/performance-marketing/shubh-veda/'); ?>" class="know-more rOSOff">Know More</a>
+						</div>
+					</div>
 					
 					<div class="testi-card">
 						<iframe width="100%" height="260" src="https://www.youtube.com/embed/DOjklhk2Y0g" title="Client Testimonial - Pride World City" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -550,25 +570,8 @@ get_header();
 							<a href="<?php echo site_url('/our-works'); ?>" class="know-more rOSOff">Know More</a>
 						</div>
 					</div>
-					<div class="testi-card">
-						<iframe width="100%" height="260" src="https://www.youtube.com/embed/z45qNLMBSWg" title="Client Testimonial - Ceratec Group" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-						
-						<h2 class="sec-title">Shubh Developers</h2>
-						<div class="card-intact">
-							<div class="inner">
-								<div class="number"><span class="count" data-count="10">0</span>x</div>
-								<div class="intact-title">Leads Growth</div>
-							</div>
-							<div class="inner">
-								<div class="number"><span class="count" data-count="20">0</span>%</div>
-								<div class="intact-title">Site Visit Growth</div>
-							</div>
-						</div>
-						<div class="testi-review">“Pinaka team is quite good”</div>
-						<div class="">
-							<a href="<?php echo site_url('/case-studies/performance-marketing/shubh-veda/'); ?>" class="know-more rOSOff">Know More</a>
-						</div>
-					</div>
+					
+
 				</div>
 				<div class="customArrow mg-tp-30">
 					<div id="testLeft">

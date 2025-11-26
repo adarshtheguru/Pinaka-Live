@@ -228,7 +228,7 @@ if ($query->have_posts()) : ?>
         <div class="container">
             <div class="partA scroll-animate fade-in">
                 <div class="title">Relevant Case Studies</div>
-                <a href="<?php echo get_post_type_archive_link('our-works'); ?>" class="themeBtn hidden-xs">See All CASE STUDIES</a>
+                <a href="<?php echo site_url('/our-works'); ?>" class="themeBtn hidden-xs">See All CASE STUDIES</a>
             </div>
         </div>
 
@@ -248,9 +248,17 @@ if ($query->have_posts()) : ?>
                     </div>
                 <?php endwhile; ?>
             </div>
+            <div class="customArrow">
+				<div id="csLeft">
+					<img src="<?php echo THEMEURL; ?>/app/images/blueLeft.svg" alt="">
+				</div>
+				<div id="csRight">
+					<img src="<?php echo THEMEURL; ?>/app/images/blueRight.svg" alt="">
+				</div>
+			</div>
         </div>
-        <div class="container">
-        	<a href="<?php echo get_post_type_archive_link('our-works'); ?>" class="themeBtn visible-xs">See All CASE STUDIES</a>
+        <div class="container text-center mg-tp-30 visible-xs">
+        	<a href="<?php echo site_url('/our-works'); ?>" class="themeBtn">See All CASE STUDIES</a>
         </div>
 
     </section>
