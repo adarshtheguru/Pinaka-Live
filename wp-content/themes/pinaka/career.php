@@ -44,68 +44,9 @@ get_header();
                 Out-of-the-box ideas drive breakthroughs. If that sounds familiar, we’ve saved a seat for you.
             </p>
             <div class="openingSliderWrapper">
-                <div class="openingSlider">
-                    <div class="slide">
-                        <div class="box">
-                            <div class="main">
-                                <div class="title">
-                                    <div class="desg">Team Lead</div>
-                                    <div class="depart">Paid Media Expert</div>
-                                </div>
-                                <div class="moreInfo">
-                                    <div class="city capsule">Pune</div>
-                                    <div class="role capsule">Full-time</div>
-                                </div>
-                            </div>
-                            <div class="desc">
-                                Should have an excellent knowledge in executing high impact paid media campaigns on Google, YouTube, Fb, Taboola & Outbrain ✔In-depth knowledge of the paid platforms like Google adwords, Meta ad…
-                            </div>
-                            <div class="btn">
-                                <a href="javascript:;" class="themeBtn">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="box">
-                            <div class="main">
-                                <div class="title">
-                                    <div class="desg">Team Lead</div>
-                                    <div class="depart">Paid Media Expert</div>
-                                </div>
-                                <div class="moreInfo">
-                                    <div class="city capsule">Pune</div>
-                                    <div class="role capsule">Full-time</div>
-                                </div>
-                            </div>
-                            <div class="desc">
-                                Should have an excellent knowledge in executing high impact paid media campaigns on Google, YouTube, Fb, Taboola & Outbrain ✔In-depth knowledge of the paid platforms like Google adwords, Meta ad…
-                            </div>
-                            <div class="btn">
-                                <a href="javascript:;" class="themeBtn">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="box">
-                            <div class="main">
-                                <div class="title">
-                                    <div class="desg">Team Lead</div>
-                                    <div class="depart">Paid Media Expert</div>
-                                </div>
-                                <div class="moreInfo">
-                                    <div class="city capsule">Pune</div>
-                                    <div class="role capsule">Full-time</div>
-                                </div>
-                            </div>
-                            <div class="desc">
-                                Should have an excellent knowledge in executing high impact paid media campaigns on Google, YouTube, Fb, Taboola & Outbrain ✔In-depth knowledge of the paid platforms like Google adwords, Meta ad…
-                            </div>
-                            <div class="btn">
-                                <a href="javascript:;" class="themeBtn">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+          <?php echo do_shortcode('[awsmjobs]'); ?>
+
             </div>
         </div>
     </section>
