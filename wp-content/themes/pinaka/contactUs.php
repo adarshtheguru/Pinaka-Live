@@ -13,13 +13,13 @@ get_header();
         <div class="container">
             <!-- <div class="secPrefix">Contact Us</div> -->
             <div class="caseBox">
-                <div class="partA  scroll-animate fade-in delay-1">
+                <div class="partA scroll-animate fade-in delay-1">
                     <div class="secTitle">Join our Journey</div>
                     <p class="para">
                         Partner with us to blend creative thinking and smart strategy for results that truly stand out.
                     </p>
                 </div>
-                <div class="partB">
+                <div class="partB scroll-animate fade-in delay-1">
                     <?php include 'customTemplates/contactUsForm.php'; ?>
                     <div class="adBox" style="display:block!important;">
                         <div class="layer layerA">
