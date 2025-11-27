@@ -97,7 +97,7 @@
 			</div>
 			<div class="partC">
 				<div class="corpInfo">
-					© <span class="copyrightYear">2025</span> All Right Reserved, Pinaka Digital Technologies
+					© <span class="copyrightYear">2025</span> All Right Reserved, All Wrong Reversed.
 				</div>
 				<div class="pagesInfo">
 					<a href="<?php echo site_url('privacy-policy'); ?>">Privacy Policy</a> | <a href="<?php echo site_url('terms-conditions'); ?>">Terms & Conditions</a> | <a href="<?php echo site_url('refund-policy'); ?>">Refund Policy</a>
