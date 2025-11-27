@@ -66,10 +66,23 @@ get_header();
         </div>
     </section>
 </main>
-<section class="padding  scroll-animate fade-in">
+<!-- <section class="padding  scroll-animate fade-in">
   <div class="container">
-    <!-- <h2>Follow Us on Instagram</h2> -->
     <?php echo do_shortcode('[insta-gallery id="0"]'); ?>
   </div>
+</section> -->
+<?php
+$instagram_feed_shortcode = get_field('instagram_feed'); // ACF field name
+
+if ($instagram_feed_shortcode) {
+    ?>
+    <section class="padding  scroll-animate fade-in">
+    <div class="container"><?php
+    echo do_shortcode($instagram_feed_shortcode);
+    ?>
+</div>
 </section>
+<?php
+}
+?>
 <?php get_footer(); ?>
