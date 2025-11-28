@@ -84,7 +84,8 @@ body.menu-open {
       padding: 25px 0;
       .hamMenuA {
         display: grid;
-        gap: 22px 0;
+        gap: 33px 0;
+        padding-top: 30px;
         li {
             width: 100%;
           a {
@@ -193,6 +194,7 @@ body.menu-open {
               line-height: 22px;
               color: #2B2C2B;
               margin-top: 20px;
+              font-weight: 600;
               @media ($max992) {
                 display: flex;
                 justify-content: space-between;

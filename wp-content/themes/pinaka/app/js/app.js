@@ -1120,3 +1120,32 @@ $(window).on('scroll', function () {
       counted = 1;
    }
 });
+
+var players = {};
+
+function onYouTubeIframeAPIReady() {
+    const iframes = document.querySelectorAll(".testi-card iframe");
+
+    iframes.forEach((iframe, index) => {
+        const videoId = iframe.id;
+
+        players[videoId] = new YT.Player(videoId, {
+            events: {
+                onStateChange: function (event) {
+                    if (event.data === YT.PlayerState.PLAYING) {
+                        pauseAllExcept(videoId);
+                    }
+                }
+            }
+        });
+    });
+}
+
+function pauseAllExcept(activeId) {
+    Object.keys(players).forEach(id => {
+        if (id !== activeId) {
+            players[id].pauseVideo();
+        }
+    });
+}
+

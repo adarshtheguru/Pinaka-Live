@@ -181,7 +181,7 @@ if ($menu_items) {
 												<a href="<?php echo site_url('/services/new-age-organic-search'); ?>">Organic Search</a>
 											</li>
 											<li>
-												<a href="<?php echo site_url('/services/social-media-management'); ?>">Social Media Marketing</a>
+												<a href="<?php echo site_url('/services/social-media-management'); ?>">Social Media Management</a>
 											</li>
 										</ul>
 									</div>

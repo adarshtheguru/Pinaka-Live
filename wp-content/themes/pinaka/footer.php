@@ -132,6 +132,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.umd.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 	<script src="https://assets.codepen.io/16327/ScrollTrigger.min.js"></script>
+	<script src="https://www.youtube.com/iframe_api"></script>
 	<!-- <script src="/assets/js/gsapanimation.js" defer></script> -->
 	<script src="<?php echo THEMEURL; ?>/assets/js/lenis-min.js"></script>
 	<script type="text/javascript" src="<?php echo THEMEURL; ?>/assets/js/validate.js"></script>

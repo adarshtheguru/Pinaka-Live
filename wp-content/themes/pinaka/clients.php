@@ -17,7 +17,7 @@ get_header();
                 <div class="partB">
                     <?php if ( have_rows('logo_categories') ) : ?>
                     <section class="logo-section">
-                        <div class="container">
+                        <div class="container no-pd">
                             
                             <!-- Category Tabs -->
                             <div class="col-3 col-xs-12">
