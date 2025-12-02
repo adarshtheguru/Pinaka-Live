@@ -269,7 +269,7 @@ get_header();
 										<li>UI/UX Design</li>
 										<li>Website Maintenance and Support</li>
 									</ul>
-									<a href="<?php echo site_url('/services/website-design-development'); ?>" class="readmore">Read More</a>
+									<a href="<?php echo site_url('/services/website-development'); ?>" class="readmore">Read More</a>
 								</div>
 							</div>
 						</div>

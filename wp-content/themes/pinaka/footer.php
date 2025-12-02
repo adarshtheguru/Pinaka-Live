@@ -71,7 +71,7 @@
 							<a href="<?php echo site_url('/services/social-media-management'); ?>">Social Media Management</a>
 							<a href="<?php echo site_url('/services/online-reputation-management'); ?>">Reputation Management</a>
 							<a href="<?php echo site_url('/services/public-relations-influencer/'); ?>">Online PR & Influencer</a>
-							<a href="<?php echo site_url('/services/website-design-development'); ?>">Web Development</a>
+							<a href="<?php echo site_url('/services/website-development'); ?>">Web Development</a>
 							<a href="<?php echo site_url('/services/graphic-designs-motion-graphic'); ?>">Creative & Visual Motion</a>
 							<a href="https://houseofhues.co/" target="_blank">Brand & Design</a>
 						</div>

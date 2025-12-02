@@ -192,10 +192,10 @@ if ($menu_items) {
 										<h3 class="title">Tech & Development</h3>
 										<ul>
 											<li>
-												<a href="<?php echo site_url('/services/website-design-development'); ?>">Website Development</a>
+												<a href="<?php echo site_url('/services/website-development'); ?>">Website Development</a>
 											</li>
 											<li>
-												<a href="<?php echo site_url('/services/website-design-development'); ?>">UX/UI Designs</a>
+												<a href="<?php echo site_url('/services/website-development'); ?>">UX/UI Designs</a>
 											</li>
 										</ul>
 									</div>
@@ -221,10 +221,10 @@ if ($menu_items) {
 										<h3 class="title">Brand Design</h3>
 										<ul>
 											<li>
-												<a href="https://houseofhues.co" target="_blank">Branding</a>
+												<a href="https://houseofhues.co" target="_blank">Brand & Designs</a>
 											</li>
 											<li>
-												<a href="<?php echo site_url('/services/graphic-designs-motion-graphic'); ?>">Graphic & Motion Designs</a>
+												<a href="<?php echo site_url('/services/graphic-designs-motion-graphic'); ?>">Motion Graphics</a>
 											</li>
 										</ul>
 									</div>
