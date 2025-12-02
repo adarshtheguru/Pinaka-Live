@@ -229,6 +229,17 @@ if ($menu_items) {
 										</ul>
 									</div>
 								</div>
+								<div class="service-menu-wrap">
+									<img src="<?php echo THEMEURL; ?>/app/images/menu-icon-6.svg" class="img-responsive">
+									<div>
+										<h3 class="title">ORM</h3>
+										<ul>
+											<li>
+												<a href="<?php echo site_url('/services/online-reputation-management'); ?>">Reputation Management</a>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
