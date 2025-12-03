@@ -37,7 +37,6 @@ a,
 a:focus,
 a:active {
     outline: none !important;
-    background: none !important;
     box-shadow: none !important;
     -webkit-tap-highlight-color: transparent;
 }
@@ -50,7 +49,6 @@ button:focus,
 button:active {
     outline: none !important;
     box-shadow: none !important;
-    background: none !important;
     -webkit-tap-highlight-color: transparent; /* Safari + Mobile */
 }
 
