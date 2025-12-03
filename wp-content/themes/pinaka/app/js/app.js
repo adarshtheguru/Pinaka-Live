@@ -71,29 +71,29 @@ $(document).ready(function () {
 			dots: false,
 			autoplay: false,
 			autoplaySpeed: 3000,
-			infinite: true,
+			infinite: false,
 			prevArrow: '#testLeft',
-		nextArrow: '#testRight',
-		responsive: [
-			{
-				breakpoint: 1441,
-				settings: {
-					slidesToShow: 3
-				}
-			},
-			{
-				breakpoint: 1025,
-				settings: {
-					slidesToShow: 2
-				}
-			},
-			{
-				breakpoint: 993,
-				settings: {
-					slidesToShow: 1
-				}
-			},
-		]
+			nextArrow: '#testRight',
+			responsive: [
+				{
+					breakpoint: 1441,
+					settings: {
+						slidesToShow: 3
+					}
+				},
+				{
+					breakpoint: 1025,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+				{
+					breakpoint: 993,
+					settings: {
+						slidesToShow: 1
+					}
+				},
+			]
 		});
 
 	if (winWD < 992) {
