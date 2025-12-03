@@ -8,27 +8,45 @@ get_header();
 	<?php include 'customTemplates/heroSection.php' ?>
 	<section class="padding aboutUsOverview pos-rel" id="aboutUsOverview">
 		<div class="container">
-			<div class="secPrefix scroll-animate fade-in">Privacy Policy</div>
+			<div class="secPrefix scroll-animate fade-in">Terms & Privacy Policy</div>
 			<div class="scroll-animate fade-in">
-				<h2>Privacy Policy for Pinaka Digital Marketing Agency</h2>
-				<h3>Information use:</h3>
-				<p>Pinaka Digital Technologies is the sole owner of the information provided and collected on this website. We shall not share, sell or rent this information with/to others in ways other than what is disclosed in this given statement.</p>
-				<h3>Order Information:</h3>
-				<p>Our “enquiry form” pages request personal information from users. The user here is expected to provide contact information like name, telephone number, email etc. This information helps us fulfill customer enquiries and orders.</p>
-				<h3>About Cookies:</h3>
-				<p>The information about the user is stored in the user’s hard drive in the form of a cookie. This information is in no way linked or similar or any personally identifiable information and is encrypted in such a way that it cannot be read by any other website. The cookie simply gets terminated once the user closes their browser. If we happen to use the cookies it is solely for your convenience.</p>
-				<h3>Use of Log files:</h3>
-				<p>IP addresses are used solely by us to analyze trends, administer the site and gather demographic information. The IP addresses are in no way connected or linked to any personal information.</p>
-				<h3>Information Sharing:</h3>
-				<p>Pinaka Digital Technologies will use your information for our own purposes and may also share it with select partners who help manage aspects of our business. We may also disclose your data to relevant regulatory bodies if required by law. Additionally, we reserve the right to use your data for internal training and testing purposes, always in a way that protects your privacy. If you prefer that your data not be used in any of these ways, you can opt out by contacting us at sales@pinaka.digital.</p>
-				<h3>About Links:</h3>
-				<p>You’ll find links to other websites on our Pinaka website. It’s important to understand that these external sites have their own privacy policies, and we at Pinaka are not responsible for their practices. We encourage you to carefully review the privacy statements of any website you visit, as this policy applies solely to information collected by Pinaka Digital Technologies.</p>
-				<h3>Security:</h3>
-				<p>Pinaka prioritizes the security of your information. When you submit sensitive data through our website, we take steps to safeguard it online and offline. User information collected through our website is restricted to our internal systems. Only authorized personnel, such as accounts or customer service representatives, may be granted access to your specific information, and only for necessary tasks related to your inquiry.</p>
-				<h3>Update/Correction of Personal Information:</h3>
-				<p>Pinaka understands that your personal information may change over time.  We offer you the ability to easily access, update, or even remove your personal data from our systems.  If you wish to unsubscribe from receiving communications like newsletters or promotional materials, you can do so by following the unsubscribe instructions included in those emails, or by contacting us directly. We are committed to respecting your preferences.</p>
-				<h3>Notification:</h3>
-				<p>Pinaka reserves the right to update this Privacy Policy from time to time. We will always post any changes on this website to ensure you’re informed about the information we collect, how we use it, and under what circumstances we might disclose it. This transparency allows you to stay up-to-date on our data practices.</p>
+				<h2>We are committed to protecting your privacy</h2>
+
+<p>We collect the minimum amount of information about you that is commensurate with providing you with a satisfactory service. This policy indicates the type of processes that may result in data being collected about you. Your use of this website gives us the right to collect that information.</p>
+
+
+<h2>Information Collected</h2>
+
+<p>We may collect any or all of the information that you give us depending on the type of transaction you enter into, including your name, address, telephone number, and email address, together with data about your use of the website. Other information that may be needed from time to time to process a request may also be collected as indicated on the website.</p>
+
+
+<h2>Information Use</h2>
+
+<p>We use the information collected primarily to process the task for which you visited the website. Data collected in the UK is held in accordance with the Data Protection Act. All reasonable precautions are taken to prevent unauthorised access to this information. This safeguard may require you to provide additional forms of identity should you wish to obtain information about your account details.</p>
+
+
+<h2>Cookies</h2>
+
+<p>Your Internet browser has the in-built facility for storing small files – “cookies” – that hold information which allows a website to recognise your account. Our website takes advantage of this facility to enhance your experience. You have the ability to prevent your computer from accepting cookies but, if you do, certain functionality on the website may be impaired.</p>
+
+
+<h2>Disclosing Information</h2>
+
+<p>We do not disclose any personal information obtained about you from this website to third parties unless you permit us to do so by ticking the relevant boxes in registration or competition forms. We may also use the information to keep in contact with you and inform you of developments associated with us. You will be given the opportunity to remove yourself from any mailing list or similar device. If at any time in the future we should wish to disclose information collected on this website to any third party, it would only be with your knowledge and consent.</p>
+
+<p>We may from time to time provide information of a general nature to third parties – for example, the number of individuals visiting our website or completing a registration form, but we will not use any information that could identify those individuals.</p>
+
+<p>In addition Pinaka Digital Technologies may work with third parties for the purpose of delivering targeted behavioural advertising to the Pinaka Digital Technologies website. Through the use of cookies, anonymous information about your use of our websites and other websites will be used to provide more relevant adverts about goods and services of interest to you.</p>
+
+
+<h2>Changes to this Policy</h2>
+
+<p>Any changes to our Privacy Policy will be placed here and will supersede this version of our policy. We will take reasonable steps to draw your attention to any changes in our policy. However, to be on the safe side, we suggest that you read this document each time you use the website to ensure that it still meets with your approval.</p>
+
+
+<h2>Contacting Us</h2>
+
+<p>If you have any questions about our Privacy Policy, or if you want to know what information we have collected about you, please email us at <a href="mailto:operations@pinaka.digital">operations@pinaka.digital</a>. You can also correct any factual errors in that information or require us to remove your details form any list under our control.</p>
 			</div>
 		</div>
 	</section>
