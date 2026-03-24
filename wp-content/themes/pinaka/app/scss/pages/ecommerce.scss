@@ -1,0 +1,1368 @@
+.ecommerce {
+
+  // ==================== Banner Section ====================
+  .ecBanner {
+    position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    // Background image
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    &__bgImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    // Gradient overlay (pink to yellow, matching theme)
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(279.52deg, #FDC500 2.43%, #FDC500 42.22%, #FD52ED 97.57%);
+      opacity: 0.75;
+      z-index: 1;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    // Layout wrapper
+    &__wrap {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 120px 0 60px;
+
+      @media ($max992) {
+        flex-direction: column;
+        padding: 100px 0 40px;
+        gap: 30px;
+      }
+    }
+
+    // Left content
+    &__content {
+      flex: 1;
+
+      .themeBtn {
+        margin-top: 30px;
+      }
+    }
+
+    &__title {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1.2;
+      color: $white;
+      margin-bottom: 20px;
+
+      @media ($max1280) {
+        font-size: 40px;
+      }
+
+      @media ($max992) {
+        font-size: 34px;
+      }
+
+      @media ($max640) {
+        font-size: 28px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 26px;
+      color: $white;
+      max-width: 520px;
+
+      @media ($max640) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    // Right form
+    &__form {
+      flex: 0 0 420px;
+
+      @media ($max1280) {
+        flex: 0 0 380px;
+      }
+
+      @media ($max992) {
+        flex: 1;
+        width: 100%;
+        max-width: 500px;
+      }
+    }
+
+    &__formCard {
+      background: $white;
+      border-radius: 8px;
+      padding: 35px 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+      @media ($max640) {
+        padding: 25px 20px;
+      }
+
+      .formGroup {
+        margin-bottom: 18px;
+
+        label {
+          display: block;
+          font-weight: 600;
+          font-size: 14px;
+          color: $black;
+          margin-bottom: 6px;
+        }
+
+        input {
+          width: 100%;
+          border: none;
+          border-bottom: 1px solid #ccc;
+          padding: 8px 0;
+          font-size: 14px;
+          color: #333;
+          outline: none;
+          background: transparent;
+          font-family: $inter;
+
+          &::placeholder {
+            color: #999;
+          }
+
+          &:focus {
+            border-bottom-color: $pc;
+          }
+        }
+      }
+
+      .themeBtn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        cursor: pointer;
+        border: none;
+        font-family: $inter;
+        font-size: 14px;
+      }
+    }
+
+    &__formTitle {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.3;
+      color: $black;
+      text-align: center;
+      margin-bottom: 25px;
+
+      @media ($max640) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  // ==================== Ecommerce Suite Section ====================
+  .ecSuite {
+    background-color: #EAF7FF;
+    padding: 80px 0 60px;
+
+    @media ($max992) {
+      padding: 60px 0 40px;
+    }
+
+    @media ($max640) {
+      padding: 40px 0 30px;
+    }
+
+    // Top row: title left, paragraph right
+    &__top {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+      margin-bottom: 40px;
+
+      @media ($max992) {
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+    }
+
+    &__left {
+      flex: 1;
+    }
+
+    &__right {
+      flex: 1;
+      padding-top: 30px;
+
+      @media ($max992) {
+        padding-top: 0;
+      }
+    }
+
+    &__prefix {
+      font-family: $inter;
+      font-weight: 600;
+      font-size: 14px;
+      color: $pc;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: block;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+
+    &__title {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.2;
+      color: $black;
+
+      @media ($max1280) {
+        font-size: 36px;
+      }
+
+      @media ($max992) {
+        font-size: 30px;
+      }
+
+      @media ($max640) {
+        font-size: 26px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 26px;
+      color: #333;
+
+      @media ($max640) {
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+
+    // Image with overlapping stats
+    &__imgWrap {
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    &__img {
+      width: 100%;
+      border-radius: 10px;
+      display: block;
+      object-fit: cover;
+      max-height: 500px;
+
+      @media ($max640) {
+        max-height: 300px;
+      }
+    }
+
+    // Stats bar overlapping bottom of image
+    &__stats {
+      display: flex;
+      background: #EAF7FF;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      padding: 25px 15px;
+      position: relative;
+      margin-top: -40px;
+      margin-left: 30px;
+      margin-right: 30px;
+      z-index: 2;
+
+      @media ($max992) {
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 20px 10px;
+        flex-wrap: wrap;
+        margin-top: -30px;
+      }
+
+      @media ($max640) {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 15px 10px;
+        gap: 10px 0;
+      }
+    }
+
+    &__stat {
+      flex: 1;
+      text-align: center;
+      border-right: 1px solid #e0e0e0;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      @media ($max992) {
+        flex: 0 0 33.33%;
+        border-right: none;
+        margin-bottom: 10px;
+      }
+
+      @media ($max640) {
+        flex: 0 0 50%;
+      }
+    }
+
+    &__statNum {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.2;
+      color: $pc;
+
+      span {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      @media ($max1280) {
+        font-size: 30px;
+
+        span {
+          font-size: 18px;
+        }
+      }
+
+      @media ($max640) {
+        font-size: 26px;
+
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &__statLabel {
+      font-size: 13px;
+      color: #555;
+      margin-top: 4px;
+
+      @media ($max640) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  // ==================== Who & What Section ====================
+  .ecWho {
+    background-color: $pc;
+    padding: 80px 0;
+
+    @media ($max992) {
+      padding: 60px 0;
+    }
+
+    @media ($max640) {
+      padding: 40px 0;
+    }
+
+    &__wrap {
+      display: flex;
+      gap: 30px;
+
+      @media ($max992) {
+        flex-direction: column;
+      }
+    }
+
+    &__card {
+      flex: 1;
+      border: 1px solid rgba($white, 0.15);
+      border-radius: 12px;
+      padding: 40px 35px;
+
+      @media ($max640) {
+        padding: 30px 20px;
+      }
+    }
+
+    &__cardTitle {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 1.25;
+      margin-bottom: 25px;
+      background: linear-gradient(318.01deg, #ffdc61 3.07%, #ffdc61 46.32%, #ff6ef1 96.93%);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      text-fill-color: transparent;
+
+      @media ($max1280) {
+        font-size: 28px;
+      }
+
+      @media ($max640) {
+        font-size: 24px;
+      }
+    }
+
+    &__list {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      padding-left: 22px;
+
+      @media ($max640) {
+        padding-left: 20px;
+        gap: 14px;
+      }
+
+      li {
+        position: relative;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $white;
+        z-index: 1;
+
+        &::before {
+          position: absolute;
+          content: url(../../app/images/neondot.png);
+          left: -22px;
+          top: 2px;
+          z-index: 2;
+        }
+
+        strong {
+          font-weight: 700;
+        }
+
+        @media ($max640) {
+          font-size: 14px;
+        }
+      }
+    }
+
+    &__note {
+      margin-top: 25px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: rgba($white, 0.8);
+      padding-left: 22px;
+
+      @media ($max640) {
+        font-size: 14px;
+        padding-left: 20px;
+      }
+    }
+  }
+
+  // ==================== Services We Offer Section ====================
+  .ecServices {
+    background-color: #EAF7FF;
+    padding: 80px 0;
+
+    @media ($max992) {
+      padding: 60px 0;
+    }
+
+    @media ($max640) {
+      padding: 40px 0;
+    }
+
+    &__slider {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+
+      @media ($max992) {
+        gap: 40px;
+      }
+    }
+
+    &__item {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      @media ($max992) {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      // Reverse layout: image left, text right
+      &--reverse {
+        flex-direction: row-reverse;
+
+        @media ($max992) {
+          flex-direction: column;
+        }
+      }
+    }
+
+    &__text {
+      flex: 1;
+    }
+
+    &__prefix {
+      font-family: $inter;
+      font-weight: 600;
+      font-size: 14px;
+      color: $pc;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: block;
+      margin-bottom: 10px;
+      font-style: italic;
+    }
+
+    &__title {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 1.25;
+      color: $black;
+      margin-bottom: 20px;
+
+      @media ($max1280) {
+        font-size: 32px;
+      }
+
+      @media ($max992) {
+        font-size: 28px;
+      }
+
+      @media ($max640) {
+        font-size: 24px;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    &__arrow {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      background: transparent;
+      font-size: 18px;
+      color: #999;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: $pc;
+        color: $pc;
+      }
+    }
+
+    &__desc {
+      font-size: 16px;
+      line-height: 26px;
+      color: #333;
+      margin-bottom: 30px;
+
+      @media ($max640) {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+    }
+
+    &__img {
+      flex: 1;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // ==================== Ecommerce Growth Framework Section ====================
+  .ecFramework {
+    background-color: $pc;
+    padding: 80px 0;
+
+    @media ($max992) {
+      padding: 60px 0;
+    }
+
+    @media ($max640) {
+      padding: 40px 0;
+    }
+
+    &__heading {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.2;
+      color: $white;
+      margin-bottom: 40px;
+
+      @media ($max1280) {
+        font-size: 36px;
+      }
+
+      @media ($max992) {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+
+      @media ($max640) {
+        font-size: 26px;
+      }
+    }
+
+    &__accordion {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__item {
+      border-top: 1px solid rgba($white, 0.2);
+
+      &:last-child {
+        border-bottom: 1px solid rgba($white, 0.2);
+      }
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 22px 0;
+      cursor: pointer;
+    }
+
+    &__title {
+      font-family: $inter;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.3;
+      color: $white;
+      transition: color 0.3s;
+
+      .active & {
+        background: linear-gradient(318.01deg, #ffdc61 3.07%, #ffdc61 46.32%, #ff6ef1 96.93%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        text-fill-color: transparent;
+        font-style: italic;
+      }
+
+      @media ($max992) {
+        font-size: 20px;
+      }
+
+      @media ($max640) {
+        font-size: 18px;
+      }
+    }
+
+    &__num {
+      margin-right: 5px;
+    }
+
+    // Toggle button (+/−)
+    &__toggle {
+      width: 36px;
+      height: 36px;
+      min-width: 36px;
+      border: 1px solid rgba($white, 0.4);
+      background: transparent;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      // Horizontal line (always visible)
+      span {
+        display: block;
+        width: 14px;
+        height: 2px;
+        background: $white;
+        position: relative;
+        transition: transform 0.3s;
+
+        // Vertical line (forms the +)
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 2px;
+          height: 14px;
+          background: $white;
+          transition: opacity 0.3s;
+        }
+      }
+
+      // When active, hide the vertical line (+ becomes −)
+      .active & span::after {
+        opacity: 0;
+      }
+    }
+
+    // Accordion body (hidden by default, shown on .active)
+    &__body {
+      display: none;
+      padding-bottom: 30px;
+
+      .active & {
+        display: block;
+      }
+    }
+
+    &__bodyWrap {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @media ($max992) {
+        flex-direction: column;
+        gap: 25px;
+      }
+    }
+
+    &__bodyLeft {
+      flex: 1;
+
+      ul {
+        list-style: disc;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        margin-bottom: 30px;
+
+        li {
+          font-size: 16px;
+          line-height: 1.5;
+          color: $white;
+
+          @media ($max640) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .white-btn {
+        border-color: $white;
+        color: $white;
+
+        &:hover {
+          background-color: $white;
+          color: $pc;
+        }
+      }
+    }
+
+    &__bodyRight {
+      flex: 1;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        object-fit: cover;
+        max-height: 350px;
+
+        @media ($max640) {
+          max-height: 250px;
+        }
+      }
+    }
+  }
+
+  // ==================== Our Process Section ====================
+  .ecProcess {
+    background-color: #EAF7FF;
+    padding: 80px 0;
+
+    @media ($max992) {
+      padding: 60px 0;
+    }
+
+    @media ($max640) {
+      padding: 40px 0;
+    }
+
+    &__heading {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.2;
+      color: $black;
+      text-align: center;
+      margin-bottom: 40px;
+
+      @media ($max1280) {
+        font-size: 36px;
+      }
+
+      @media ($max992) {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+
+      @media ($max640) {
+        font-size: 26px;
+      }
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+      @media ($max992) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media ($max640) {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    &__card {
+      background: $white;
+      border: 1px solid #e0e4e8;
+      border-radius: 12px;
+      padding: 25px;
+
+      @media ($max640) {
+        padding: 20px;
+      }
+    }
+
+    &__icon {
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+
+      @media ($max640) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  // ==================== Ecommerce Suite Packages Section ====================
+  .ecPackages {
+    background-color: $pc;
+    padding: 80px 0;
+
+    @media ($max992) {
+      padding: 60px 0;
+    }
+
+    @media ($max640) {
+      padding: 40px 0;
+    }
+
+    &__heading {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.2;
+      color: $white;
+      text-align: center;
+      margin-bottom: 40px;
+
+      @media ($max1280) {
+        font-size: 36px;
+      }
+
+      @media ($max992) {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+
+      @media ($max640) {
+        font-size: 26px;
+      }
+    }
+
+    // Scrollable wrapper for mobile
+    &__tableWrap {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border-radius: 12px;
+
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: rgba($white, 0.1);
+        border-radius: 3px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: rgba($white, 0.3);
+        border-radius: 3px;
+      }
+    }
+
+    // Table
+    &__table {
+      width: 100%;
+      min-width: 900px;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: $white;
+      border-radius: 12px;
+      overflow: hidden;
+      font-family: $inter;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #333;
+
+      thead {
+        tr:first-child {
+          th {
+            // background: $white;
+            border-bottom: 0px;
+          }
+        }
+        .ecPackages__suiteHead{
+            background: linear-gradient(328.76deg, #F4C51E 6.3%, #FFD84C 46.57%, #FF33EB 93.7%);
+            text-align: center;
+        }
+      }
+
+      th, td {
+        padding: 14px 20px;
+        text-align: left;
+        vertical-align: top;
+        border-bottom: 1px solid #7CCEFF;
+
+        @media ($max640) {
+          padding: 12px 14px;
+          font-size: 13px;
+        }
+      }
+
+      // First column (feature names)
+      th:first-child,
+      td:first-child {
+        width: 22%;
+        min-width: 180px;
+      }
+
+      td:first-child{
+        background-color: #ADE1FF;
+      }
+
+      // Plan columns equal width
+      th:nth-child(n+2),
+      td:nth-child(n+2) {
+        width: 26%;
+      }
+      td:nth-child(n+2) {
+        background-color: #D6F0FF;
+      }
+
+      tbody {
+        tr:nth-child(even) {
+          background: #f9fafb;
+        }
+
+        tr:hover {
+          background: #f0f7ff;
+        }
+      }
+
+      tfoot {
+        tr {
+          background: $white;
+        }
+
+        tr:nth-child(even) {
+          background: #f9fafb;
+        }
+      }
+    }
+
+    // "Ecommerce Suite" spanning header
+    &__suiteHead {
+      text-align: center;
+      background: $white;
+      padding-top: 20px !important;
+      padding-bottom: 6px !important;
+    }
+
+    &__suiteLabel {
+      display: inline-block;
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 24px;
+      color: $black;
+      position: relative;
+
+      // Gradient underline bar
+    //   &::after {
+    //     content: '';
+    //     display: block;
+    //     height: 4px;
+    //     margin-top: 8px;
+    //     border-radius: 2px;
+    //     background: linear-gradient(279.52deg, #FDC500 2.43%, #FDC500 42.22%, #FD52ED 97.57%);
+    //   }
+
+      @media ($max640) {
+        font-size: 20px;
+      }
+    }
+
+    // "Features / Deliverables" header
+    &__featureHead {
+      font-weight: 700;
+      font-size: 15px;
+      color: $black;
+      vertical-align: middle !important;
+    }
+
+    // Plan name sub-headers
+    &__planRow {
+      th {
+        background: $white;
+        border-bottom: 2px solid #e5e7eb;
+      }
+    }
+
+    &__planHead {
+      font-weight: 700;
+      font-size: 15px;
+      color: $black;
+      text-align: left;
+    }
+
+    // Feature label cells
+    &__feature {
+      font-weight: 600;
+      color: $black;
+    }
+
+    // CTA row
+    &__ctaRow {
+      td {
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+        border-bottom: none;
+      }
+
+      td:first-child {
+        color: #999;
+      }
+
+      .themeBtn {
+        display: inline-block;
+        font-size: 12px;
+        padding: 10px 20px;
+        letter-spacing: 0.05em;
+        white-space: nowrap;
+      }
+    }
+
+    // Add-on Service header
+    &__addonHead {
+      td {
+        text-align: center;
+        font-family: $inter;
+        font-weight: 700;
+        font-size: 18px;
+        color: $black;
+        padding: 20px !important;
+        border-top: 2px solid #e5e7eb;
+        border-bottom: 1px solid #e5e7eb;
+        background: $white !important;
+      }
+    }
+  }
+
+  // ==================== Why Brands Choose Section ====================
+  .ecWhyChoose {
+    background-color: #EAF7FF;
+    padding: 80px 0;
+
+    @media ($max992) {
+      padding: 60px 0;
+    }
+
+    @media ($max640) {
+      padding: 40px 0;
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      @media ($max992) {
+        flex-direction: column;
+        gap: 30px;
+      }
+    }
+
+    &__left {
+      flex: 1;
+    }
+
+    &__title {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.2;
+      color: $black;
+      margin-bottom: 30px;
+
+      @media ($max1280) {
+        font-size: 36px;
+      }
+
+      @media ($max992) {
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+
+      @media ($max640) {
+        font-size: 26px;
+      }
+    }
+
+    &__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      padding-left: 0;
+      margin-bottom: 35px;
+
+      li {
+        position: relative;
+        padding: 14px 0 14px 32px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+        border-bottom: 1px solid #d0dde6;
+
+        &:first-child {
+          border-top: 1px solid #d0dde6;
+        }
+
+        &::before {
+          position: absolute;
+          content: url(../../app/images/neondot.png);
+          left: 0;
+          top: 14px;
+        }
+
+        @media ($max640) {
+          font-size: 14px;
+          padding: 12px 0 12px 28px;
+
+          &::before {
+            top: 12px;
+          }
+        }
+      }
+    }
+
+    &__right {
+      flex: 1;
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        object-fit: cover;
+      }
+    }
+  }
+
+  // ==================== FAQ Section ====================
+  .ecFaq {
+    background-color: $white;
+    padding: 80px 0;
+
+    @media ($max992) {
+      padding: 60px 0;
+    }
+
+    @media ($max640) {
+      padding: 40px 0;
+    }
+
+    &__heading {
+      font-family: $inter;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 1.2;
+      color: $pc;
+      text-align: center;
+      margin-bottom: 40px;
+
+      @media ($max1280) {
+        font-size: 36px;
+      }
+
+      @media ($max992) {
+        font-size: 30px;
+        margin-bottom: 30px;
+      }
+
+      @media ($max640) {
+        font-size: 26px;
+      }
+    }
+
+    &__accordion {
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__item {
+      background: #EAF7FF;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 24px;
+      cursor: pointer;
+      gap: 15px;
+
+      @media ($max640) {
+        padding: 16px 18px;
+      }
+    }
+
+    &__question {
+      font-family: $inter;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 1.4;
+      color: $pc;
+
+      @media ($max640) {
+        font-size: 14px;
+      }
+    }
+
+    // Toggle button (+/−)
+    &__toggle {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      border: none;
+      background: $pc;
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      span {
+        display: block;
+        width: 12px;
+        height: 2px;
+        background: $white;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 2px;
+          height: 12px;
+          background: $white;
+          transition: opacity 0.3s;
+        }
+      }
+
+      .active & span::after {
+        opacity: 0;
+      }
+    }
+
+    // Answer (hidden by default)
+    &__answer {
+      display: none;
+      padding: 0 24px 20px;
+
+      .active & {
+        display: block;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        height: 1px;
+        background: #c0ddef;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #444;
+
+        @media ($max640) {
+          font-size: 14px;
+        }
+      }
+
+      @media ($max640) {
+        padding: 0 18px 16px;
+      }
+    }
+  }
+}

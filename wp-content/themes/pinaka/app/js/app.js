@@ -40,8 +40,11 @@ $(document).ready(function () {
 	});
 
 	$(".scroll-next").click(function () {
-		var cls = $(this).closest("section").next().offset().top - 50;
-		$("html, body").animate({ scrollTop: cls }, 1000);
+		var nextSection = $(this).closest("section").next();
+		if (nextSection.length) {
+			var cls = nextSection.offset().top - 50;
+			$("html, body").animate({ scrollTop: cls }, 1000);
+		}
 	});
 
 
@@ -1097,7 +1100,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
 var counted = 0;
 $(window).on('scroll', function () {
-   var oTop = $('.counterMain').offset().top - window.innerHeight;
+   var counterEl = $('.counterMain');
+   if (!counterEl.length) return;
+   var oTop = counterEl.offset().top - window.innerHeight;
    if (counted === 0 && $(window).scrollTop() > oTop) {
       $('.count').each(function () {
          var $this = $(this);
